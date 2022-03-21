@@ -1,0 +1,129 @@
+/* Глобальные переменные в index */
+
+
+
+h1{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    font-weight: 500;
+    color: var(--color-greydark);
+}
+
+
+
+.conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 70vh;
+
+    box-shadow: 0px 5px 15px 0px var(--color-dark);
+    border-radius: 1rem;
+}
+
+
+
+.block-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block-logo__page{
+    margin-top: 1.5rem;
+}
+
+
+
+.block-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.block-title__page{
+    width: 18vw;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+
+
+.block-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block-login__button{
+    padding: 1.2vh 7vw;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    margin-top: 3rem;
+    transition: transform 0.1s linear;
+    background: var(--color-yellow)
+}
+
+.block-login__button:active{
+    transform: scale(0.9);
+}
+
+
+.block-login__input{ 
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 15rem;
+    border-bottom: 1px solid var(--color-grey);
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.block-login__input:focus{
+    padding: 0.5rem 2rem;
+}
+
+.block-login__input::placeholder{
+    color: var(--color-grey);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+  
+.block-login__input:focus::placeholder{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+
+.block-password{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.block-password__recovery{
+    position: absolute;
+    color: var(--color-yellow) !important;
+    text-decoration:none;
+    font-weight: 700;
+    top: 1.5rem;
+    right: 1rem;
+    font-size: 0.8rem;
+    padding: 0;
+}
