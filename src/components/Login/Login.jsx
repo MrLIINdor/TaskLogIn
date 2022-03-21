@@ -46,7 +46,7 @@ export default function Login() {
           <input className='block-login__input' onChange={handleChagne} type="text" name='email' placeholder='Адрес'/>
 
           <div className='block-password'>
-            <input className='block-login__input' onChange={handleChagne} type="text" name='password' placeholder='Пароль'/>
+            <input className='block-login__input' onChange={handleChagne} type="password" maxLength={20} name='password' placeholder='Пароль'/>
             <a  href="https://kampus.team/" className='block-password__recovery'>Забыли пароль?</a>
           </div>
 
